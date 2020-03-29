@@ -1,14 +1,14 @@
-# Copyright (C) 2017 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+# Copyright (C) 2020 AYCH inc. 
+# This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: monostack 2.0.4\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/monostack\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"Project-Id-Version: Leadwise Style 3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/leadwise\n"
+"POT-Creation-Date: 2020-03-23 14:00+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator:\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -136,7 +136,7 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "monostack"
+msgid "leadwise"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -145,7 +145,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Monostack highlights specific grammar much like syntax highlighting does in code editors. Monostack is named after the monospace font stacks used throughout the theme."
+"Leadwise Style is a Gutenberg-ready WordPress style that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Leadwise Style highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the leadwisespace font styles used throughout the style."
 msgstr ""
 
 #. Author of the plugin/theme
