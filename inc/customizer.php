@@ -1,6 +1,6 @@
 <?php
 /**
- * monostack Theme Customizer
+ * Leadwise Style Customizer
  *
  * @package Leadwise Style
  */
