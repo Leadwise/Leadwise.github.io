@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 get_header(); ?>
@@ -13,11 +13,11 @@ get_header(); ?>
 
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! Page not found.', 'monostack' ); ?></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Oops! Page not found.', 'leadwise' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try searching or selecting an item in the menu?', 'monostack' ); ?></p>
+				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try searching or selecting an item in the menu?', 'leadwise' ); ?></p>
 
 				<?php
 					get_search_form();
