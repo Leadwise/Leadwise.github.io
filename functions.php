@@ -1,13 +1,13 @@
 <?php
 /**
- * monostack functions and definitions
+ * Leadwise Style functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
-if ( ! function_exists( 'monostack_setup' ) ) :
+if ( ! function_exists( 'leadwise_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'monostack_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function monostack_setup() {
+	function leadwise_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on monostack, use a find and replace
-		 * to change 'monostack' to the name of your theme in all the template files.
+		 * If you're building a theme based on leadwise, use a find and replace
+		 * to change 'leadwise' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'monostack', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'leadwise', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'monostack_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'monostack' ),
+			'menu-1' => esc_html__( 'Primary', 'leadwise' ),
 		) );
 
 		/*
@@ -89,42 +89,42 @@ if ( ! function_exists( 'monostack_setup' ) ) :
 		// Add support for custom color scheme.
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name'  => __( 'Highlight', 'monostack' ),
+				'name'  => __( 'Highlight', 'leadwise' ),
 				'slug'  => 'highlight',
 				'color' => '#363948',
 			),
 			array(
-				'name'  => __( 'Dark Grey', 'monostack' ),
+				'name'  => __( 'Dark Grey', 'leadwise' ),
 				'slug'  => 'dark-grey',
 				'color' => '#282A36',
 			),
 			array(
-				'name'  => __( 'Muted', 'monostack' ),
+				'name'  => __( 'Muted', 'leadwise' ),
 				'slug'  => 'muted',
 				'color' => '#8492B1',
 			),
 			array(
-				'name'  => __( 'Light Grey', 'monostack' ),
+				'name'  => __( 'Light Grey', 'leadwise' ),
 				'slug'  => 'light-grey',
 				'color' => '#f7f7f7',
 			),
 			array(
-				'name'  => __( 'Blue', 'monostack' ),
+				'name'  => __( 'Blue', 'leadwise' ),
 				'slug'  => 'blue',
 				'color' => '#6BE5FD',
 			),
 			array(
-				'name'  => __( 'Pink', 'monostack' ),
+				'name'  => __( 'Pink', 'leadwise' ),
 				'slug'  => 'pink',
 				'color' => '#FF79C0',
 			),
 			array(
-				'name'  => __( 'Green', 'monostack' ),
+				'name'  => __( 'Green', 'leadwise' ),
 				'slug'  => 'green',
 				'color' => '#50FA78',
 			),
 			array(
-				'name'  => __( 'Purple', 'monostack' ),
+				'name'  => __( 'Purple', 'leadwise' ),
 				'slug'  => 'purple',
 				'color' => '#BD93F2',
 			),
@@ -135,21 +135,21 @@ if ( ! function_exists( 'monostack_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
 		 */
-		function monostack_widgets_init() {
+		function leadwise_widgets_init() {
 			register_sidebar( array(
-				'name'          => __( 'Footer Widget', 'monostack' ),
+				'name'          => __( 'Footer Widget', 'leadwise' ),
 				'id'            => 'footer-sidebar',
-				'description'   => __( 'Add widgets here to appear in your footer on all pages.', 'monostack' ),
+				'description'   => __( 'Add widgets here to appear in your footer on all pages.', 'leadwise' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<p class="widget-title">',
 				'after_title'   => '</p>',
 			) );
 		}
-		add_action( 'widgets_init', 'monostack_widgets_init' );
+		add_action( 'widgets_init', 'leadwise_widgets_init' );
 	}
 endif;
-add_action( 'after_setup_theme', 'monostack_setup' );
+add_action( 'after_setup_theme', 'leadwise_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -158,15 +158,15 @@ add_action( 'after_setup_theme', 'monostack_setup' );
  *
  * @global int $content_width
  */
-function monostack_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'monostack_content_width', 640 );
+function leadwise_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'leadwise_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'monostack_content_width', 0 );
+add_action( 'after_setup_theme', 'leadwise_content_width', 0 );
 
 /**
  * Register Google Fonts
  */
-function monostack_fonts_url() {
+function leadwise_fonts_url() {
 	$fonts_url = '';
 
 	/*
@@ -174,7 +174,7 @@ function monostack_fonts_url() {
 	 * supported by Noto Serif, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'monostack' );
+	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'leadwise' );
 
 	if ( 'off' !== $notoserif ) {
 		$font_families = array();
@@ -195,119 +195,119 @@ function monostack_fonts_url() {
 /**
  * Enqueue scripts and styles.
  */
-function monostack_scripts() {
+function leadwise_scripts() {
 	wp_enqueue_style( 'gutenbergbase-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'monostackblocks-style', get_template_directory_uri() . '/css/blocks.css' );
+	wp_enqueue_style( 'leadwiseblocks-style', get_template_directory_uri() . '/css/blocks.css' );
 
-	wp_enqueue_style( 'monostack-fonts', monostack_fonts_url() );
+	wp_enqueue_style( 'leadwise-fonts', leadwise_fonts_url() );
 
-	wp_enqueue_script( 'monostack-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'leadwise-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	
 	if ( !is_404() ) {
-		wp_enqueue_script( 'monostack-syntax-highlighting', get_template_directory_uri() . '/js/syntax-highlighting.js', array(), '20180816', true );
+		wp_enqueue_script( 'leadwise-syntax-highlighting', get_template_directory_uri() . '/js/syntax-highlighting.js', array(), '20180816', true );
 		
-		wp_localize_script( 'monostack-syntax-highlighting', 'monostack_pronouns', array(
-			__( 'I', 'monostack' ),
-			__( 'we', 'monostack' ),
-			__( 'me', 'monostack' ),
-			__( 'us', 'monostack' ),
-			__( 'you', 'monostack' ),
-			__( 'she', 'monostack' ),
-			__( 'he', 'monostack' ),
-			__( 'her', 'monostack' ),
-			__( 'him', 'monostack' ),
-			__( 'they', 'monostack' ),
-			__( 'them', 'monostack' ),
-			__( 'it', 'monostack' ),
-			__( 'that', 'monostack' ),
-			__( 'which', 'monostack' ),
-			__( 'who', 'monostack' ),
-			__( 'whom', 'monostack' ),
-			__( 'whose', 'monostack' ),
-			__( 'whichever', 'monostack' ),
-			__( 'whoever', 'monostack' ),
-			__( 'whomever', 'monostack' ),
-			__( 'this', 'monostack' ),
-			__( 'these', 'monostack' ),
-			__( 'that', 'monostack' ),
-			__( 'those', 'monostack' ),
-			__( 'anybody', 'monostack' ),
-			__( 'anyone', 'monostack' ),
-			__( 'anything', 'monostack' ),
-			__( 'each', 'monostack' ),
-			__( 'either', 'monostack' ),
-			__( 'everyone', 'monostack' ),
-			__( 'everybody', 'monostack' ),
-			__( 'everything', 'monostack' ),
-			__( 'nobody', 'monostack' ),
-			__( 'neither', 'monostack' ),
-			__( 'no one', 'monostack' ),
-			__( 'nothing', 'monostack' ),
-			__( 'somebody', 'monostack' ),
-			__( 'one', 'monostack' ),
-			__( 'someone', 'monostack' ),
-			__( 'something', 'monostack' ),
-			__( 'few', 'monostack' ),
-			__( 'many', 'monostack' ),
-			__( 'both', 'monostack' ),
-			__( 'several', 'monostack' ),
-			__( 'any', 'monostack' ),
-			__( 'all', 'monostack' ),
-			__( 'some', 'monostack' ),
-			__( 'most', 'monostack' ),
-			__( 'none', 'monostack' ),
-			__( 'myself', 'monostack' ),
-			__( 'yourself', 'monostack' ),
-			__( 'ourselves', 'monostack' ),
-			__( 'yourselves', 'monostack' ),
-			__( 'herself', 'monostack' ),
-			__( 'himself', 'monostack' ),
-			__( 'themselves', 'monostack' ),
-			__( 'itself', 'monostack' ),
-			__( 'who', 'monostack' ),
-			__( 'what', 'monostack' ),
-			__( 'which', 'monostack' ),
-			__( 'whose', 'monostack' ),
-			__( 'whom', 'monostack' ),
+		wp_localize_script( 'leadwise-syntax-highlighting', 'leadwise_pronouns', array(
+			__( 'I', 'leadwise' ),
+			__( 'we', 'leadwise' ),
+			__( 'me', 'leadwise' ),
+			__( 'us', 'leadwise' ),
+			__( 'you', 'leadwise' ),
+			__( 'she', 'leadwise' ),
+			__( 'he', 'leadwise' ),
+			__( 'her', 'leadwise' ),
+			__( 'him', 'leadwise' ),
+			__( 'they', 'leadwise' ),
+			__( 'them', 'leadwise' ),
+			__( 'it', 'leadwise' ),
+			__( 'that', 'leadwise' ),
+			__( 'which', 'leadwise' ),
+			__( 'who', 'leadwise' ),
+			__( 'whom', 'leadwise' ),
+			__( 'whose', 'leadwise' ),
+			__( 'whichever', 'leadwise' ),
+			__( 'whoever', 'leadwise' ),
+			__( 'whomever', 'leadwise' ),
+			__( 'this', 'leadwise' ),
+			__( 'these', 'leadwise' ),
+			__( 'that', 'leadwise' ),
+			__( 'those', 'leadwise' ),
+			__( 'anybody', 'leadwise' ),
+			__( 'anyone', 'leadwise' ),
+			__( 'anything', 'leadwise' ),
+			__( 'each', 'leadwise' ),
+			__( 'either', 'leadwise' ),
+			__( 'everyone', 'leadwise' ),
+			__( 'everybody', 'leadwise' ),
+			__( 'everything', 'leadwise' ),
+			__( 'nobody', 'leadwise' ),
+			__( 'neither', 'leadwise' ),
+			__( 'no one', 'leadwise' ),
+			__( 'nothing', 'leadwise' ),
+			__( 'somebody', 'leadwise' ),
+			__( 'one', 'leadwise' ),
+			__( 'someone', 'leadwise' ),
+			__( 'something', 'leadwise' ),
+			__( 'few', 'leadwise' ),
+			__( 'many', 'leadwise' ),
+			__( 'both', 'leadwise' ),
+			__( 'several', 'leadwise' ),
+			__( 'any', 'leadwise' ),
+			__( 'all', 'leadwise' ),
+			__( 'some', 'leadwise' ),
+			__( 'most', 'leadwise' ),
+			__( 'none', 'leadwise' ),
+			__( 'myself', 'leadwise' ),
+			__( 'yourself', 'leadwise' ),
+			__( 'ourselves', 'leadwise' ),
+			__( 'yourselves', 'leadwise' ),
+			__( 'herself', 'leadwise' ),
+			__( 'himself', 'leadwise' ),
+			__( 'themselves', 'leadwise' ),
+			__( 'itself', 'leadwise' ),
+			__( 'who', 'leadwise' ),
+			__( 'what', 'leadwise' ),
+			__( 'which', 'leadwise' ),
+			__( 'whose', 'leadwise' ),
+			__( 'whom', 'leadwise' ),
 		) );
 		
-		wp_localize_script( 'monostack-syntax-highlighting', 'monostack_conjunctions', array(
-			__( 'for', 'monostack' ),
-			__( 'and', 'monostack' ),
-			__( 'nor', 'monostack' ),
-			__( 'but', 'monostack' ),
-			__( 'or', 'monostack' ),
-			__( 'yet', 'monostack' ),
-			__( 'so', 'monostack' ),
-			__( 'either', 'monostack' ),
-			__( 'neither', 'monostack' ),
-			__( 'not only', 'monostack' ),
-			__( 'but also', 'monostack' ),
-			__( 'both', 'monostack' ),
-			__( 'whether', 'monostack' ),
-			__( 'although', 'monostack' ),
-			__( 'though', 'monostack' ),
-			__( 'even though', 'monostack' ),
-			__( 'as much as', 'monostack' ),
-			__( 'as long as', 'monostack' ),
-			__( 'as soon as', 'monostack' ),
-			__( 'because', 'monostack' ),
-			__( 'since', 'monostack' ),
-			__( 'so that', 'monostack' ),
-			__( 'in order that', 'monostack' ),
-			__( 'if', 'monostack' ),
-			__( 'les', 'monostack' ),
-			__( 'est', 'monostack' ),
-			__( 'even if', 'monostack' ),
-			__( 'that', 'monostack' ),
-			__( 'unless', 'monostack' ),
-			__( 'until', 'monostack' ),
-			__( 'when', 'monostack' ),
-			__( 'where', 'monostack' ),
+		wp_localize_script( 'leadwise-syntax-highlighting', 'leadwise_conjunctions', array(
+			__( 'for', 'leadwise' ),
+			__( 'and', 'leadwise' ),
+			__( 'nor', 'leadwise' ),
+			__( 'but', 'leadwise' ),
+			__( 'or', 'leadwise' ),
+			__( 'yet', 'leadwise' ),
+			__( 'so', 'leadwise' ),
+			__( 'either', 'leadwise' ),
+			__( 'neither', 'leadwise' ),
+			__( 'not only', 'leadwise' ),
+			__( 'but also', 'leadwise' ),
+			__( 'both', 'leadwise' ),
+			__( 'whether', 'leadwise' ),
+			__( 'although', 'leadwise' ),
+			__( 'though', 'leadwise' ),
+			__( 'even though', 'leadwise' ),
+			__( 'as much as', 'leadwise' ),
+			__( 'as long as', 'leadwise' ),
+			__( 'as soon as', 'leadwise' ),
+			__( 'because', 'leadwise' ),
+			__( 'since', 'leadwise' ),
+			__( 'so that', 'leadwise' ),
+			__( 'in order that', 'leadwise' ),
+			__( 'if', 'leadwise' ),
+			__( 'les', 'leadwise' ),
+			__( 'est', 'leadwise' ),
+			__( 'even if', 'leadwise' ),
+			__( 'that', 'leadwise' ),
+			__( 'unless', 'leadwise' ),
+			__( 'until', 'leadwise' ),
+			__( 'when', 'leadwise' ),
+			__( 'where', 'leadwise' ),
 		) );
 
-		wp_localize_script( 'monostack-syntax-highlighting', 'monostack_prepositions', array(
+		wp_localize_script( 'monostack-syntax-highlighting', 'leadwise_prepositions', array(
 			__( 'about', 'monostack' ),
 			__( 'beside', 'monostack' ),
 			__( 'near', 'monostack' ),
