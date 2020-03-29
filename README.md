@@ -1,10 +1,10 @@
 # Leadwise Style
 
-Leadwise Style is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Leadwise Style highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the "leadwisespace" font stacks used throughout the Style.
+Leadwise Style is a WordPress style that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Leadwise Style highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the "leadwisespace" font stacks used throughout the Style.
 
 ### Foundation
 
-The Leadwise Style is built on the [Gutenberg starter theme](https://github.com/leadwise/leadwise-starter-theme).
+The Leadwise Style is built on the [Leadwise Style](https://github.com/leadwise/leadwise-style).
 
 ### Font Style
 
