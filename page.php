@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 get_header(); ?>
