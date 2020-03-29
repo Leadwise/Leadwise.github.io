@@ -3,9 +3,9 @@
 
 ( spec => {
 	
-	const prepositions = valuesToRegex( monostack_prepositions );
-	const conjunctions = valuesToRegex( monostack_conjunctions );
-	const pronouns = valuesToRegex( monostack_pronouns );
+	const prepositions = valuesToRegex( leadwise_prepositions );
+	const conjunctions = valuesToRegex( leadwise_conjunctions );
+	const pronouns = valuesToRegex( leadwise_pronouns );
 	
 	function preg_quote (str, delimiter) {
 		// @see http://locutus.io/php/preg_quote/
