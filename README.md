@@ -6,9 +6,9 @@ Leadwise Style is a Gutenberg-ready WordPress theme that brings the beauty of co
 
 The Leadwise Style is built on the [Gutenberg starter theme](https://github.com/leadwise/leadwise-starter-theme).
 
-### Font Stack
+### Font Style
 
-The font stack is where it’s at. I spent a lot of time thinking it through to bring the best quality leadwisespace typefaces to your screen.
+The font style is where it’s at. I spent a lot of time thinking it through to bring the best quality leadwisespace typefaces to your screen.
 
 ```
 body {
