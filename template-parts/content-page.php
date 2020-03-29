@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 ?>
@@ -19,7 +19,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'monostack' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'leadwise' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 	<?php edit_post_link(
         sprintf(
             /* translators: %s: Name of current post */
-            esc_html__( 'Edit %s', 'monostack' ),
+            esc_html__( 'Edit %s', 'leadwise' ),
             the_title( '<span class="screen-reader-text">"', '"</span>', false )
         ),
         '<footer class="entry-footer"><span class="edit-link">',
