@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 ?>
@@ -21,16 +21,16 @@
             }
         ?>
 		<?php
-			printf('<p>'. esc_html__( 'Computationally powered by', 'monostack' )); 
+			printf('<p>'. esc_html__( 'Computationally powered by', 'leadwise' )); 
 		?> 
-		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'monostack' ) ); ?>"><?php
+		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'leadwise' ) ); ?>"><?php
 			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'WordPress', 'monostack' ));
+			printf( esc_html__( 'WordPress', 'leadwise' ));
 		?></a>
 		<span class="sep"> | </span>
 		<?php
 			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %s', 'monostack' ), '<a href="https://github.com/mapk/monostack/">Monostack</a>' );
+			printf( esc_html__( 'Theme: %s', 'leadwise' ), '<a href="https://github.com/leadwise/">Leadwise</a>' );
 		?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
