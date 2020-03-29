@@ -1,4 +1,4 @@
-=== Monostack ===
+=== Leadwise Style ===
 
 Contributors: mapk
 Tags: blog, translation-ready, custom-background, custom-colors, custom-logo, footer-widgets, full-width-template, rtl-language-support, threaded-comments, one-column
@@ -11,9 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Monostack highlights specific grammar much like syntax highlighting does in code editors. Monostack is named after the "monospace" font stack used throughout the theme.
+Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Monostack highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the "leadwisespace" font used throughout the theme.
 
-Based on [Underscores](http:underscores.me/) and the [Gutenberg Starter Theme](https://github.com/WordPress/gutenberg-starter-theme) which uses the [GPL 2 License](https://github.com/WordPress/gutenberg-starter-theme/blob/master/LICENSE), Monostack is designed and further developed by [Mark Uraine](https://markuraine.com/) and [Ernesto Mendez](https://profiles.wordpress.org/mendezcode/).
+Based on [Underscores](http:underscores.me/) and the [Gutenberg Starter Theme](https://github.com/leadwise/leadwise-starter-theme) which uses the [GPL 2 License](https://github.com/leadwise/leadwise-starter-theme/blob/master/LICENSE), Leadwise Style is designed and further developed by [Mark Uraine](https://markuraine.com/) and [Ernesto Mendez](https://profiles.wordpress.org/mendezcode/).
 
 == Installation ==
 
@@ -78,5 +78,5 @@ Yes. I use CSS variables which are not supported in IE. I also use ES6 (ie. arro
 
 == Credits ==
 
-* Based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Based on Underscores http://underscores.me/, (C) 2012-2020 AYCH Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-3.0.html)
+* normalize.css http://Leadwise.github.io/normalize.css/, (C) 2012-2020 Jean Wallet and J0sephvan, [MIT](http://opensource.org/licenses/MIT)
