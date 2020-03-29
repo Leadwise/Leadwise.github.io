@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function monostack_jetpack_setup() {
+function leadwise_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'monostack_infinite_scroll_render',
+		'render'    => 'leadwise_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function monostack_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'monostack-style',
+			'stylesheet' => 'leadwise-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -37,7 +37,7 @@ function monostack_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'monostack_jetpack_setup' );
+add_action( 'after_setup_theme', 'leadwise_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
