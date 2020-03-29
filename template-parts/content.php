@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package monostack
+ * @package Leadwise Style
  */
 
 ?>
@@ -20,7 +20,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php monostack_posted_on(); ?>
+			<?php leadwise_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -32,7 +32,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'monostack' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'leadwise' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -43,14 +43,14 @@
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'monostack' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'leadwise' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php monostack_entry_footer(); ?>
+		<?php leadwise_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	
 	<?php elseif( has_excerpt() ) : 
