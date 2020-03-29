@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Monostack highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the "leadwisespace" font used throughout the theme.
+Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Leadwise Style highlights specific grammar much like syntax highlighting does in code editors. Leadwise Style is named after the "leadwisespace" font used throughout the Style.
 
 Based on [Underscores](http:underscores.me/) and the [Gutenberg Starter Theme](https://github.com/leadwise/leadwise-starter-theme) which uses the [GPL 2 License](https://github.com/leadwise/leadwise-starter-theme/blob/master/LICENSE), Leadwise Style is designed and further developed by [Mark Uraine](https://markuraine.com/) and [Ernesto Mendez](https://profiles.wordpress.org/mendezcode/).
 
@@ -25,11 +25,11 @@ Based on [Underscores](http:underscores.me/) and the [Gutenberg Starter Theme](h
 
 = What does "Gutenberg-ready" mean? =
 
-"Gutenberg-ready" is a way to indicate that this theme supports the Gutenberg plugin and the usage of blocks in the new editor. There are no sidebars in this theme and widgets are not recommended since they will all eventually be blocks anyways. Monostack takes advantage of the 100% width layout for Gutenberg blocks to work correctly.
+"Gutenberg-ready" is a way to indicate that this theme supports the Gutenberg plugin and the usage of blocks in the new editor. There are no sidebars in this theme and widgets are not recommended since they will all eventually be blocks anyways. Leadwise Style takes advantage of the 100% width layout for Gutenberg blocks to work correctly.
 
 = Does this theme support any plugins? =
 
-Monostack includes support for Infinite Scroll in Jetpack. It also works best with the Gutenberg plugin.
+Leadwise Style includes support for Infinite Scroll in Jetpack. It also works best with the Gutenberg plugin.
 
 = Is there a problem with IE 11? =
 
@@ -79,4 +79,4 @@ Yes. I use CSS variables which are not supported in IE. I also use ES6 (ie. arro
 == Credits ==
 
 * Based on Underscores http://underscores.me/, (C) 2012-2020 AYCH Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-3.0.html)
-* normalize.css http://Leadwise.github.io/normalize.css/, (C) 2012-2020 Jean Wallet and J0sephvan, [MIT](http://opensource.org/licenses/MIT)
+* normalize.css http://Leadwise.github.io/normalize.css/, (C) 2012-2020 Jean Wallet and J0sephvan, [AGPL] (https://www.gnu.org/licenses), [MIT](http://opensource.org/licenses/MIT)
